@@ -1,0 +1,379 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    
+}
+html,body{
+    height: 100%;
+    width: 100%;
+   
+    
+}
+
+ 
+#nav{
+   
+    background-color: #bcab90;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    
+}
+#logo img{
+    height: 80px;
+    width: 100%;
+    
+
+}
+.navpart2{
+    display: flex;
+    align-items: center;
+    gap:1vw;
+
+}
+.navpart2 h4{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size:14px ;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+
+}
+.navpart2 h4::after{
+    content: "";
+    position: absolute;
+    height:100% ;
+    width: 100%;
+    background-color: #000; 
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+
+}
+.navpart2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+.navpart2 h4 a{
+    
+   font-size: 2vw;
+    padding: 1vw 1vw;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+.navpart2 h4:hover a{
+    color: #fff;
+}
+
+
+ 
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    background-color: 	#00477e;
+}
+#page1a{
+    padding-top: 10%;
+    margin-left: 12%;
+}
+#page1 .intro {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#page1 h1 {
+    font-size: 3rem;
+    color: rgb(18, 183, 243);
+    font-style: oblique;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#page1 .des {
+    font-size: 1.5rem;
+    color: white;
+    max-width: 35rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.design .circle{
+    
+    aspect-ratio: 1 ;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+  }
+  .circle:nth-child(1){
+    background:linear-gradient(90deg,transparent 50%,#262525 50%) ;
+    width: 35rem;
+    
+  
+  }
+  .circle:nth-child(2){
+    background-color: white;
+    width: 28rem;
+    background-image: url(ph.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem white,inset 0 0 1rem white,0 0 2rem #3877ff,inset 0 0 2rem #3877ff ,0 0 4rem #3877ff
+    ,inset 0 0 4rem #3877ff;
+    
+  }
+
+          /* ----------page1 is close----------------*/
+
+
+
+
+#page2{
+    position: fixed;
+    margin-top: 0%;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color:#bcab90;
+    
+   
+   
+}
+
+
+#movingtext{
+    white-space: nowrap;
+    overflow: auto;
+}
+#movingtext::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#movingtext h1{
+    font-family: sans-serif;
+    font-size: 9vw;
+    display: inline-block;
+    font-weight: 600;
+    
+    
+}
+#gola{
+    display: inline-block;
+    
+    height: 70px;
+    width: 70px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+#pagebottom{
+    
+    width: 110%;
+    padding: 3vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+@keyframes move {
+    from{
+     transform: translate(0);
+    }
+    to{
+     transform: translate(-100%);
+    }
+ 
+}
+#aboutmyself h1{
+    font-size: 5vw;
+}
+#aboutmyself p{
+    padding-left: 20px;
+font-size: 3vw;
+width: 60%;
+}
+ 
+
+ 
+ #pet-select option{
+    font-size: 3vw;
+ }
+ .p1{
+    
+    height: 100px;
+    width: 40%;
+    position: relative;
+    padding: 0vw 2vw;
+    overflow: hidden;
+   border: 1px solid #000;
+   border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.p1 a{
+    text-decoration: none;
+    color: #000;
+    height: 6vw;
+    margin-left: 26%;
+    padding: 2vw 2vw;
+    font-size: 4vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.p1 .overlap{
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+    
+    }
+    .p1:hover .overlap{
+        top:0;
+    }
+    #p1i{
+        margin-top: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #p12{
+        margin-top: 12vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* ----------------pade2 close=============== */
+
+    #page3{
+        margin-top: -4%;
+        height: 100vh;
+        width: 100%;
+        background-color:#00477e ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+       
+
+    }
+    #page3 h1{
+        font-size: 4vw;
+        text-align: center;
+    }
+    #page3 h3{
+        font-size: 3vw;
+        text-align: center;
+    }
+    #car img{
+        padding-left: ;
+        height: 35vw;
+        width: 35vw;
+        object-fit: cover;
+    }
+    #loader{
+        height: 100%;
+        width: 100%;
+        background-color:black;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        transition: all ease 0.7s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #loader h1{
+        font-size: 4vw;
+        color: transparent;
+        background: linear-gradient(to right,rgb(0, 255, 132),rgb(0, 179, 255));
+        -webkit-background-clip: text;
+        position: absolute;
+        opacity: 0;
+        animation-name: load;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+    }
+    #loader h1:nth-child(2){
+        animation-delay: 2s;
+        color: mediumblue;
+    }
+    #loader h1:nth-child(3){
+        animation-delay: 3s;
+        color: aqua;
+    }
+    
+    @keyframes load {
+        0%{
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    #loader1{
+        
+            height: 100%;
+            width: 100%;
+            background-color:aquamarine;
+            z-index: 9;
+            position: fixed;
+            top: 0;
+            transition: all ease .8s;
+            
+    }
+    

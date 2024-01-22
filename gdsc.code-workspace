@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../portpolio"
+		},
+		{
+			"path": "../Ram_"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "gdsc"
+	}
+}
